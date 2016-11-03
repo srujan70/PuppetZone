@@ -1,4 +1,5 @@
 service { 'puppet' :
-  ensure => stopped
+  ensure => stopped,
+  enable => false
 
 }
