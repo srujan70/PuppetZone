@@ -13,4 +13,6 @@ You
 ${puppetcontent}
 MY
 
+notify { $multiline: } 
+
 
