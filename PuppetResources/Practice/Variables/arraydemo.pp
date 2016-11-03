@@ -8,7 +8,7 @@ $fileDetails={
     'owner' => 'root',
     'group' => 'root',
     'mode'  => '0655',
-    'content' => $lines
+    'content' => "${lines}[0] \n ${lines}[1]"
 
 } 
 
