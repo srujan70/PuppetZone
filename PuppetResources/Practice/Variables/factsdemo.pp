@@ -5,3 +5,5 @@ OS: ${facts['os']['name']}
 Release: ${facts['os']['relase']}
 
 END
+
+notify { $display: } 
