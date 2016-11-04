@@ -1,12 +1,14 @@
 $owner = 'root'
 $group = 'root'
 $mode = '0644' 
+
+$fileContent= " Hi This is managed by Puppet \n The owner is ${owner} \n The root is ${root}"
 file { '/temp.txt':
     ensure => file,
     owner  => $owner,
     group  => $group,
     mode   => $mode,
-    content=> 'Hi This is from puppet'
+    content=> $fileContent
 }
 
 file { '/mydir':
@@ -16,4 +18,4 @@ file { '/mydir':
     mode   => $mode,
 }
 
-notify { 'Hi This is from puppet': } 
+notify { $fileContent: } 
