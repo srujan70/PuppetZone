@@ -45,7 +45,7 @@
 class ntp {
 #Manage NTP on CentOS and Ubuntu hosts
 
-package { $ntp_service:
+package { 'ntp':
   before => Class['ntp::config'],
 }
 
